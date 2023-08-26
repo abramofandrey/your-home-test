@@ -1,18 +1,36 @@
 @font-face {
-    font-family: 'Book Antiqua';
-    src: url('../fonts/BookAntiqua.woff2') format('woff2'),
-        url('../fonts/BookAntiqua-Bold.woff') format('woff');
+    font-family: "Book Antiqua";
+    src:
+        url("../fonts/BookAntiqua.woff2") format("woff2"),
+        url("../fonts/BookAntiqua-Bold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Book Antiqua';
-    src: url('../fonts/BookAntiqua-Bold.woff2') format('woff2'),
-        url('../fonts/BookAntiqua-Bold.woff') format('woff');
+    font-family: "Book Antiqua";
+    src:
+        url("../fonts/BookAntiqua-Bold.woff2") format("woff2"),
+        url("../fonts/BookAntiqua-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
+.visibility-hidden {
+    visibility: hidden;
+}
+
+body {
+    font-family: "Book Antiqua", "Arial", sans-serif;
+    max-width: 995px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 882px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
