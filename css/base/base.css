@@ -1,0 +1,26 @@
+html {
+    background-image: url('/../../img/background.jpg');
+}
+
+body {
+    font-family: "Book Antiqua", sans-serif;
+    max-width: 1025px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 910px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.phone {
+    font-weight: normal;
+    font-size: 26px;
+    color: var(--color-accent);
+}

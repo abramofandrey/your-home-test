@@ -1,0 +1,19 @@
+:root {
+    --color-main: #4e2c1e;
+    --color-accent: #fff;
+    --background-color: #fff6ee;
+    --background-footer: #8b694a;
+    --gradient-main: linear-gradient(
+        0deg,
+        rgba(119, 71, 11, 1) 0%,
+        rgba(170, 114, 38, 1) 50%,
+        rgba(227, 184, 124, 1) 100%
+    );
+    --gradient-accent: linear-gradient(
+        0deg,
+        rgba(255, 249, 224, 1) 0%,
+        rgba(232, 196, 120, 1) 50%,
+        rgba(255, 249, 224, 1) 100%
+    );
+    --gradient-text: linear-gradient(0deg, rgba(128, 68, 29, 1) 0%, rgba(27, 11, 5, 1) 100%);
+}
