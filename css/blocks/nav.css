@@ -14,16 +14,57 @@
     border: 1px solid var(--color-main);
     font-family: "Verdana", sans-serif;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: normal;
+    text-transform: uppercase;
     color: var(--color-accent);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .4s ease-in;
+    transition: all .4s ease-in-out;
 }
 
 .menu__link:hover {
     background: var(--gradient-accent);
     cursor: pointer;
     color: var(--color-main);
+}
+
+.submenu__list {
+    position: absolute;
+    min-width: 200px;
+    background-color: #fcebc6;
+    border: 1px solid var(--color-main);
+    border-top: none;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu__list .menu__item:hover .submenu__list {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg);
+}
+
+
+.submenu__list .submenu__link {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-main);
+    transition: all .3s ease-in;
+}
+
+.submenu__link:hover  {
+    background-color: var(--submenu-fill);
+}
+
+.submenu__list .submenu__link::first-letter {
+    text-transform: capitalize;
 }

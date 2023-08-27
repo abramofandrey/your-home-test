@@ -11,7 +11,7 @@
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .header-feedback {
@@ -28,8 +28,13 @@
     box-shadow: 4px 4px 8px 0px rgba(var(--color-accent));;
     color: var(--color-main);
     font-size: 16px;
-    font-weight: normal;text-align: center;
+    font-weight: 600;
+    text-align: center;
     transition: background .5s ease-in;
+}
+
+.header-feedback a::first-letter {
+    text-transform: capitalize;
 }
 
 .header-feedback a:hover {
