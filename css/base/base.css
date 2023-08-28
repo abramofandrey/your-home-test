@@ -28,6 +28,24 @@ body {
     margin-bottom: 20px;
 }
 
+button {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: var(--color-main);
+    text-align: center;
+    border-radius: 5px;
+    background: var(--gradient-accent);
+    transition: all 0.4s ease;
+    border: none;
+    border: 1px solid var(--border-color);
+}
+
+.services-content__btn:hover {
+    background: var(--gradient-main);
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
 .phone {
     font-weight: normal;
     font-size: 26px;

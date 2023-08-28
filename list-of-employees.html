@@ -91,37 +91,35 @@
             <div class="container">
                 <h2 class="title recruit-staff__title">Подобрать персонал</h2>
                 <div class="recruit-staff__inner">
-                    <div class="selected-staff">
-                        <label for="selected-staff-category">Показать только</label>
-                        <select name="selected-staff-category" id="selected-staff-category">
-                            <option value="nanny">Няня</option>
-                            <option value="cook">Повар</option>
-                            <option value="governess">Гувернантка</option>
-                            <option value="groom">Конюх</option>
-                            <option value="gardener">Садовник</option>
-                        </select>
-                    </div>
-                    <div class="selected-property__wrapper">
-                        <form action="" method="post">
+                    <form action="#" method="post">
+                        <div class="selected-staff">
+                            <label for="selected-staff-category">Показать только</label>
+                            <select name="selected-staff-category" id="selected-staff-category">
+                                <option value="nanny">Няня</option>
+                                <option value="cook">Повар</option>
+                                <option value="governess">Гувернантка</option>
+                                <option value="groom">Конюх</option>
+                                <option value="gardener">Садовник</option>
+                            </select>
+                        </div>
+                        <div class="selected-property__wrapper">
                             <div class="selected-property__row">
-                                <label for="experience">Стаж</label>
-                                <span>от</span>
-                                <input type="number" name="experience" placeholder="1">
+                                <label for="experience">Стаж от</label>
+                                <input type="number" name="experience" placeholder="1" required>
                                 <span>до</span>
-                                <input type="number" name="experience" placeholder="30">
+                                <input type="number" name="experience" placeholder="30" required>
                                 <span>лет</span>
                             </div>
                             <div class="selected-property__row">
-                                <label for="age">Возраст</label>
-                                <span>от</span>
-                                <input type="number" name="age" placeholder="25">
+                                <label for="age">Возраст от</label>
+                                <input type="number" name="age" placeholder="25" required>
                                 <span>до</span>
-                                <input type="number" name="age" placeholder="65">
+                                <input type="number" name="age" placeholder="65" required>
                                 <span>лет</span>
                             </div>
-                            <button type="submit">подобрать</button>
-                        </form>
-                    </div>
+                        </div>
+                        <button class="button recruit-staff__btn" type="submit">подобрать</button>
+                    </form>
                 </div>
                 <table>
                     <thead>
@@ -133,55 +131,55 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Ермакова Надежда Ивановна</td>
                             <td>Няня</td>
                             <td>30</td>
                             <td>5лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Филимонов Евгений Семенович</td>
                             <td>Садовник</td>
                             <td>50</td>
                             <td>20лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Уборщица</td>
                             <td>35</td>
                             <td>7 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Миронов Юрий Герасимович</td>
                             <td>Конюх</td>
                             <td>60</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Новикова Нина Алексеевна</td>
                             <td>Повар</td>
                             <td>55</td>
                             <td>30 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
@@ -192,7 +190,6 @@
             </div>
         </section>
         <section class="benefits">
-            <h2 class="title benefits__title">Заголовок</h2>
             <p class="benefits__text">Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной,
                 домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством
                 нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и
