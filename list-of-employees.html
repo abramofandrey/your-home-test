@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/main.css">
         <title>Список служащих</title>
     </head>
 
@@ -15,6 +15,8 @@
                 <div class="header__inner">
                     <a class="phone" href="tel:84872311345">8 (4872) 31-13-45</a>
                     <h1 class="header__title visibility-hidden">Экономьте время в Вашем доме</h1>
+                    <img class="header__logo" src="img/logo-width-title.png"
+                        alt="логотип агенство домашнего персонала Ваш Дом">
                     <div class="header-feedback">
                         <a href="#">оставить заявку</a>
                         <a href="#">отправить резюме</a>
@@ -27,27 +29,32 @@
                         <a href="#" class="menu__link">главная</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">подобрать персонал</a>
-                        <ul class="submenu">
-                            <li><a href="#">о нас</a></li>
-                            <li><a href="#">задать вопрос</a></li>
-                            <li><a href="#">это интересно</a></li>
-                            <li><a href="#">отзывы</a></li>
+                        <a href="list-of-employees.html" class="menu__link">подобрать<br> персонал</a>
+                        <ul class="submenu__list">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">о нас</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">задать вопрос</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">это интересно</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">отзывы</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">цены</a>
                     </li>
+                </ul>
+                <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            <img src="img/logo-width-title.png" alt="логотип агенство домашнего персонала Ваш Дом">
-                        </a>
+                        <a href="#" class="menu__link">оставить<br> заявку</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">оставить заявку</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">оставить вакансию</a>
+                        <a href="#" class="menu__link">оставить<br> вакансию</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">контакты</a>
@@ -56,7 +63,6 @@
             </nav>
         </header>
         <section class="top-slider">
-            <!-- Slider main container -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -78,44 +84,42 @@
                         <img src="img/slide-6.jpg" alt="">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+            <div class="swiper-pagination"></div>
         </section>
         <section class="recruit-staff">
             <div class="container">
-                <h2 class="recruit-staff__title">Подобрать персонал</h2>
+                <h2 class="title recruit-staff__title">Подобрать персонал</h2>
                 <div class="recruit-staff__inner">
-                    <div class="selected-staff">
-                        <label for="selected-staff-category">Показать только</label>
-                        <select name="selected-staff-category" id="selected-staff-category">
-                            <option value="nanny">Няня</option>
-                            <option value="cook">Повар</option>
-                            <option value="governess">Гувернантка</option>
-                            <option value="groom">Конюх</option>
-                            <option value="gardener">Садовник</option>
-                        </select>
-                    </div>
-                    <div class="selected-property__wrapper">
-                        <form action="" method="post">
+                    <form action="#" method="post">
+                        <div class="selected-staff">
+                            <label for="selected-staff-category">Показать только</label>
+                            <select name="selected-staff-category" id="selected-staff-category">
+                                <option value="nanny">Няня</option>
+                                <option value="cook">Повар</option>
+                                <option value="governess">Гувернантка</option>
+                                <option value="groom">Конюх</option>
+                                <option value="gardener">Садовник</option>
+                            </select>
+                        </div>
+                        <div class="selected-property__wrapper">
                             <div class="selected-property__row">
-                                <label for="experience">Стаж</label>
-                                <span>от</span>
-                                <input type="number" name="experience" placeholder="1">
+                                <label for="experience">Стаж от</label>
+                                <input type="number" name="experience" placeholder="1" required>
                                 <span>до</span>
-                                <input type="number" name="experience" placeholder="30">
+                                <input type="number" name="experience" placeholder="30" required>
                                 <span>лет</span>
                             </div>
                             <div class="selected-property__row">
-                                <label for="age">Возраст</label>
-                                <span>от</span>
-                                <input type="number" name="age" placeholder="25">
+                                <label for="age">Возраст от</label>
+                                <input type="number" name="age" placeholder="25" required>
                                 <span>до</span>
-                                <input type="number" name="age" placeholder="65">
+                                <input type="number" name="age" placeholder="65" required>
                                 <span>лет</span>
                             </div>
-                            <button type="submit">подобрать</button>
-                        </form>
-                    </div>
+                        </div>
+                        <button class="button recruit-staff__btn" type="submit">подобрать</button>
+                    </form>
                 </div>
                 <table>
                     <thead>
@@ -127,55 +131,55 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Ермакова Надежда Ивановна</td>
                             <td>Няня</td>
                             <td>30</td>
                             <td>5лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Филимонов Евгений Семенович</td>
                             <td>Садовник</td>
                             <td>50</td>
                             <td>20лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Уборщица</td>
                             <td>35</td>
                             <td>7 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Миронов Юрий Герасимович</td>
                             <td>Конюх</td>
                             <td>60</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Новикова Нина Алексеевна</td>
                             <td>Повар</td>
                             <td>55</td>
                             <td>30 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
                             <td>15 лет</td>
                         </tr>
-                        <tr>
+                        <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
                             <td>Гувернантка</td>
                             <td>45</td>
@@ -186,7 +190,6 @@
             </div>
         </section>
         <section class="benefits">
-            <h2 class="benefits__title">Заголовок</h2>
             <p class="benefits__text">Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной,
                 домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством
                 нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и
@@ -229,36 +232,42 @@
             </p>
         </section>
         <footer class="footer">
-            <nav class="footer-nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">главная</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">подобрать персонал</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">цены</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">главная</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">подобрать персонал</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">цены</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="footer-top">
+                <nav class="footer-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link" target="_blank">подобрать персонал</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">цены</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">подобрать персонал</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">цены</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="footer-copyright">
-                <a class="phone" href="tel:84872311345">8 (4872) 31-13-45</a>
-                <div class="footer-copyright__wrapper">
-                    <p class="footer-copyright-text">Разработка и продвижение сайта компанией «Юни Веб» -</p>
-                    <img class="footer-copyright-img" src="img/logo-UW.png" alt="Логотип компании ЮниВеб">
+                <div class="container">
+                    <a class="phone" href="tel:84872311345">8 (4872) 31-13-45</a>
+                    <div class="footer-copyright__wrapper">
+                        <p class="footer-copyright-text">Разработка и продвижение сайта компанией «Юни Веб» -</p>
+                        <img class="footer-copyright-img" src="img/logo-UW.png" alt="Логотип компании ЮниВеб">
+                    </div>
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/top-slider.js"></script>
     </body>
 
 </html>
