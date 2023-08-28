@@ -37,3 +37,21 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Garamond';
+    src: url('../../fonts/Garamond-Bold.woff2') format('woff2'),
+        url('../../fonts/Garamond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garamond';
+    src: url('../../fonts/Garamond.woff2') format('woff2'),
+        url('../../fonts/Garamond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

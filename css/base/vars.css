@@ -2,8 +2,10 @@
     --color-main: #4e2c1e;
     --color-accent: #fff;
     --background-color: #fff6ee;
+    --color-text: #35190d;
     --background-footer: #8b694a;
     --submenu-fill: #d8af75;
+    --border-color: #c7a865;
     --gradient-main: linear-gradient(
         0deg,
         rgba(119, 71, 11, 1) 0%,
