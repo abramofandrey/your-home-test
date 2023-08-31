@@ -1,5 +1,5 @@
 :root {
-    --color-main: #4e2c1e;
+    --color-main: #472800;
     --color-accent: #fff;
     --background-color: #fff6ee;
     --color-text: #35190d;
@@ -8,6 +8,11 @@
     --border-color: #c7a865;
     --border-input: #b1b1b1;
     --table-header-fill: #814b04;
+    --border-color-modal: #cd8e31;
+    --background-color-modal: rgba(232, 228, 226, 0.87);
+    --color-font-input: #55493f;
+    --background-modal: #fcebc6;
+    --color-text-modal: #45250a;
     --gradient-main: linear-gradient(
         0deg,
         rgba(119, 71, 11, 1) 0%,
@@ -15,10 +20,18 @@
         rgba(227, 184, 124, 1) 100%
     );
     --gradient-accent: linear-gradient(
-        0deg,
-        rgba(255, 249, 224, 1) 0%,
-        rgba(232, 196, 120, 1) 50%,
+        180deg,
+        rgba(250, 237, 199, 1) 0%,
+        rgba(234, 207, 143, 1) 13%,
+        rgba(232, 196, 120, 1) 58%,
+        rgba(255, 249, 224, 1) 96%,
         rgba(255, 249, 224, 1) 100%
     );
-    --gradient-text: linear-gradient(0deg, rgba(128, 68, 29, 1) 0%, rgba(27, 11, 5, 1) 100%);
+    --gradient-text: linear-gradient(
+        0deg,
+        rgba(21, 7, 2, 1) 0%,
+        rgba(94, 54, 37, 1) 48%,
+        rgba(130, 69, 28, 1) 75%,
+        rgba(130, 69, 28, 1) 100%
+    );
 }

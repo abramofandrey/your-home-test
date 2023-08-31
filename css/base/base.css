@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: "Book Antiqua", sans-serif;
+    font-family: "Book Antiqua", "Arial", sans-serif;
     max-width: 950px;
     margin: 0 auto;
     background-color: var(--background-color);
@@ -33,7 +33,7 @@ button {
     font-weight: normal;
     color: var(--color-main);
     text-align: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: var(--gradient-accent);
     transition: all 0.4s ease;
     border: none;
