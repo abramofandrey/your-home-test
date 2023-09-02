@@ -1,6 +1,6 @@
 .header {
     background-color: var(--color-main);
-    padding-top: 10px;
+    padding-top: 8px 23px;
     position: relative;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -51,7 +51,7 @@
 }
 
 .header img {
-    z-index: 100px;
+    z-index: 10;
 }
 
 .header__logo {

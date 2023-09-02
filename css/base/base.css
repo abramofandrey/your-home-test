@@ -47,7 +47,8 @@ button {
 }
 
 .phone {
-    font-weight: normal;
+    font-family: "Book Antiqua", "Arial", sans-serif;
     font-size: 26px;
+    font-weight: normal;
     color: var(--color-accent);
 }

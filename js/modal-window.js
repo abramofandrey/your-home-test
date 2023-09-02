@@ -21,6 +21,11 @@ linkSendResume.addEventListener('click', () => {
     linkSendResume.classList.add('header-feedback__link--active');
 });
 
+function closeSubmenu() {
+    submenuList.classList.add('hidden');
+    menuLink.classList.remove('menu__list--active');
+}
+
 //Нажатие на Tab или Escape.Закрыть модалку
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Tab' || e.key === 'Escape') {

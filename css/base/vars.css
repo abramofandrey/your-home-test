@@ -16,12 +16,14 @@
     --color-text-modal: #45250a;
     --gradient-main: linear-gradient(
         0deg,
-        rgba(119, 71, 11, 1) 0%,
-        rgba(170, 114, 38, 1) 50%,
-        rgba(227, 184, 124, 1) 100%
+        rgba(164, 103, 31, 1) 0%,
+        rgba(131, 76, 11, 1) 14%,
+        rgba(119, 71, 11, 1) 25%,
+        rgba(176, 120, 43, 1) 55%,
+        rgba(233, 192, 135, 1) 100%
     );
     --gradient-accent: linear-gradient(
-        180deg,
+        0deg,
         rgba(250, 237, 199, 1) 0%,
         rgba(234, 207, 143, 1) 13%,
         rgba(232, 196, 120, 1) 58%,
@@ -35,4 +37,5 @@
         rgba(130, 69, 28, 1) 75%,
         rgba(130, 69, 28, 1) 100%
     );
+    --inner-glow: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7539390756302521) 100%);
 }
