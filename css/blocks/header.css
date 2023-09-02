@@ -25,6 +25,7 @@
     width: 175px;
     height: 25px;
     background: var(--gradient-accent);
+    border: 1px solid var(--border-btn);
     border-radius: 4px;
     font-family: "Book Antiqua";
     color: var(--color-main);
