@@ -8,12 +8,14 @@
     --border-color: #c7a865;
     --border-input: #b1b1b1;
     --border-btn: #d8c992;
+    --color-text-button: #4e2c1e;
     --table-header-fill: #814b04;
     --border-color-modal: #cd8e31;
     --background-color-modal: rgba(232, 228, 226, 0.87);
     --color-font-input: #55493f;
     --background-modal: #fcebc6;
     --color-text-modal: #45250a;
+    --text-shadow: 0px 1px 3px rgba(17,17,26,0.46);
     --gradient-main: linear-gradient(
         0deg,
         rgba(164, 103, 31, 1) 0%,
