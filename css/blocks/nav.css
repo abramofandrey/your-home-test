@@ -89,7 +89,7 @@
 
 .submenu__list {
     position: absolute;
-    top: 41px;
+    top: 39px;
     left: -2px;
     min-width: 190px;
     background-color: var(--background-modal);

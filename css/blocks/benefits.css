@@ -5,10 +5,11 @@
 }
 
 .benefits__text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arial";
     font-size: 14px;
-    font-weight: normal;
-    color: var(--color-text);
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--color-text-button);
     text-align: justify;
-    text-justify: inter-character;
+    text-justify: inter-word;
 }
