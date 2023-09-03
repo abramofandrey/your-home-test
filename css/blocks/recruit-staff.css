@@ -1,5 +1,5 @@
 .recruit-staff {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .recruit-staff__title {
@@ -28,17 +28,29 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .recruit-staff__inner {
-    background-blend-mode: multiply;
-    background-image: url('../../img/ornament2.png');
+    /* background-blend-mode: multiply; */
+    /* background-image: url('../../img/ornament2.png'); */
     background-repeat: no-repeat;
     background-size: contain;
     display: grid;
     place-items: center;
-    width: 100%;
+    width: 860px;
     min-height: 110px;
     border: 1px solid var(--border-input);
     background-color: #f6ead0;
     margin-bottom: 35px;
+    position: relative;
+}
+
+.recruit-staff__img-r {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+.recruit-staff__img-l {
+    position: absolute;
+    top: -12px;
+    left: -12px;
 }
 
 .recruit-staff__inner form select {
