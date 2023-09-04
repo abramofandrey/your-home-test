@@ -33,14 +33,13 @@ body {
 }
 
 button {
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-    font-weight: normal;
+    font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+    font-weight: 500;
     color: var(--color-main);
+    text-shadow: var(--text-shadow);
     text-align: center;
-    /* border-radius: 5px; */
-    background: var(--gradient-accent);
+    background: var(--gradient-main);
     transition: all 0.4s ease;
-    border: none;
     border: 1px solid var(--border-color);
 }
 

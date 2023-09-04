@@ -3,22 +3,45 @@
 }
 
 .recruit-staff__title {
+    font-family: "Book Antiqua", "Arial", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
     text-align: center;
 }
 
+.recruit-staff__inner .staff-select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 label,
+.selected-property__row input,
 .selected-property__row span {
     font-family: "Verdana", Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 500;
+    color: var(--color-text-modal);
+    text-align: var(--text-shadow);
+    text-shadow: var(--text-shadow);
 }
 
-input {
+.selected-property__row input {
     background: #fff;
     padding: 5px;
     width: 40px;
     height: 35px;
     border: 1px solid var(--border-input);
+}
+
+.selected-property__row input::placeholder {
+    color: var(--color-text-modal);
+    text-shadow: var(--text-shadow);
+}
+
+.selected-property__row input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -28,40 +51,30 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .recruit-staff__inner {
-    /* background-blend-mode: multiply; */
-    /* background-image: url('../../img/ornament2.png'); */
     background-repeat: no-repeat;
     background-size: contain;
     display: grid;
     place-items: center;
-    width: 860px;
     min-height: 110px;
-    border: 1px solid var(--border-input);
-    background-color: #f6ead0;
+    border: 1px solid var(--border-select-dropdown);
+    background-color: rgba(246, 234, 208, 0.14);
     margin-bottom: 35px;
     position: relative;
 }
 
-.recruit-staff__img-r {
+.recruit-staff__img--right,
+.recruit-staff__img--left {
     position: absolute;
     top: -12px;
-    right: -12px;
-}
-.recruit-staff__img-l {
-    position: absolute;
-    top: -12px;
-    left: -12px;
+    pointer-events: none;
 }
 
-.recruit-staff__inner form select {
-    background: #fff;
-    padding: 5px;
-    border: 1px solid var(--border-color);
-    font-family: "Verdana", Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    color: var(--main-color);
-    width: 200px;
+.recruit-staff__img--right {
+    right: -12px;
+}
+
+.recruit-staff__img--left {
+    left: -12px;
 }
 
 .recruit-staff__inner form {
@@ -69,6 +82,32 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: space-between;
     align-items: center;
     gap: 80px;
+}
+
+.staff-select-group {
+    z-index: 10;
+}
+
+.dropdown__button--show-only {
+    width: 203px;
+}
+
+.dropdown__list-item,
+.dropdown__button--show-only {
+    font-size: 18px;
+}
+
+.dropdown__list--show-only {
+    width: 230px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--border-select-dropdown);
+    padding-top: 32px;
+}
+
+.dropdown__list-item--show-only {
+    padding: 5px 10px;
 }
 
 .selected-property__row {
@@ -93,15 +132,16 @@ input[type="number"]::-webkit-outer-spin-button {
 .recruit-staff__btn {
     width: 145px;
     height: 30px;
-    background: var(--gradient-main);
+    border-radius: 5px;
     font-size: 14px;
     color: var(--color-accent);
     text-transform: uppercase;
 }
 
 .recruit-staff__btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 5px -5px rgba(126, 13, 17, 0.2);
+    background: var(--gradient-accent);
+    color: var(--color-text-button);
+    cursor: pointer;
 }
 
 table {

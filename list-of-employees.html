@@ -170,18 +170,25 @@
             <div class="container">
                 <h2 class="title recruit-staff__title">Подобрать персонал</h2>
                 <div class="recruit-staff__inner">
-                    <img class="recruit-staff__img-r" src="img/orn-r.png" alt="">
-                    <img class="recruit-staff__img-l" src="img/orn-l.png" alt="">
+                    <img class="recruit-staff__img--right" src="img/orn-r.png" alt="">
+                    <img class="recruit-staff__img--left" src="img/orn-l.png" alt="">
                     <form action="#" method="post">
-                        <div class="selected-staff">
-                            <label for="selected-staff-category">Показать только</label>
-                            <select name="selected-staff-category" id="selected-staff-category">
-                                <option value="nanny">Няня</option>
-                                <option value="cook">Повар</option>
-                                <option value="governess">Гувернантка</option>
-                                <option value="groom">Конюх</option>
-                                <option value="gardener">Садовник</option>
-                            </select>
+                        <div class="staff-select-group">
+                            <label for="select-category">Показать только</label>
+                            <div class="dropdown">
+                                <button class="dropdown__button dropdown__button--show-only">Няня</button>
+                                <ul class="dropdown__list dropdown__list--show-only">
+                                    <!-- <li class="dropdown__list-item dropdown__list-item--show-only" data-value="null" disabled>null</li> -->
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="nanny">Няня</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="governess">Гувернантка</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="street-cleaner">Дворник</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="driver">Водитель</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="gardener">Садовник</li>
+                                </ul>
+                                <input class="dropdown__input-hidden" type="text" name="select-category"
+                                    value="" required>
+                                <img src="img/select-arrow.png" alt="стрелка выбора опций">
+                            </div>
                         </div>
                         <div class="selected-property__wrapper">
                             <div class="selected-property__row">
