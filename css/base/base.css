@@ -6,7 +6,7 @@ body {
     font-family: "Book Antiqua", "Arial", sans-serif;
     max-width: 950px;
     margin: 0 auto;
-    background-image: url('./../../img/body-background.png');
+    background-image: url('./../../img/body-background-not-shadow.png');
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
