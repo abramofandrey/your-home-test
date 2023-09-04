@@ -13,12 +13,12 @@ function hideModal() {
 linkRequest.addEventListener('click', () => {
     modalRequest.classList.toggle('hidden');
     modalResume.classList.add('hidden');
-    linkRequest.classList.add('header-feedback__link--active');
+    linkRequest.classList.toggle('header-feedback__link--active');
 });
 
 linkSendResume.addEventListener('click', () => {
     modalResume.classList.toggle('hidden');
-    linkSendResume.classList.add('header-feedback__link--active');
+    linkSendResume.classList.toggle('header-feedback__link--active');
 });
 
 //Нажатие на Tab или Escape.Закрыть модалку

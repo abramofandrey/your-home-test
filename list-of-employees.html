@@ -18,46 +18,125 @@
                     <img class="header__logo" src="img/logo-width-title.png"
                         alt="логотип агенство домашнего персонала Ваш Дом">
                     <div class="header-feedback">
-                        <a href="#">оставить заявку</a>
-                        <a href="#">отправить резюме</a>
+                        <a class="header-feedback__link header-feedback__link--request" href="#">оставить заявку</a>
+                        <a class="header-feedback__link header-feedback__link--resume" href="#">отправить резюме</a>
+
+                        <div class="header-feedback__modal header-feedback__modal--request hidden">
+                            <div class="header-feedback__modal-content">
+                                <form class="header-feedback__form">
+
+                                    <input type="text" id="full-name" name="full-name" placeholder="ФИО" required>
+                                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+
+                                    <div class="staff-select-group">
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Няня</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="tutor">Репетитор</li>
+                                                <li class="dropdown__list-item" data-value="governess">Гувернантка</li>
+                                                <li class="dropdown__list-item" data-value="nanny">Няня</li>
+                                                <li class="dropdown__list-item" data-value="driver">Водитель</li>
+                                                <li class="dropdown__list-item" data-value="gardener">Садовник</li>
+                                            </ul>
+                                            <input class="dropdown__input-hidden" type="text" name="select-category"
+                                                value="" required>
+                                            <img src="img/select-arrow.png" alt="стрелка выбора опций">
+                                        </div>
+                                    </div>
+
+                                    <div class="staff-select-group">
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">График работы</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="tutor">Полный день</li>
+                                                <li class="dropdown__list-item" data-value="governess">Пол дня</li>
+                                                <li class="dropdown__list-item" data-value="nanny">График работы</li>
+                                                <li class="dropdown__list-item" data-value="driver">несколько часов</li>
+                                                <li class="dropdown__list-item" data-value="gardener">Круглосуточно</li>
+                                            </ul>
+                                            <input class="dropdown__input-hidden" type="text" name="select-category"
+                                                value="" required>
+                                            <img src="img/select-arrow.png" alt="стрелка выбора опций">
+                                        </div>
+                                    </div>
+
+                                    <textarea id="message" name="message"
+                                        placeholder="Дополнительная информация"></textarea>
+
+                                    <button type="submit" class="header-feedback__submit-button">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header-feedback__modal header-feedback__modal--resume hidden">
+                            <div class="header-feedback__modal-content">
+                                <form class="header-feedback__form">
+
+                                    <input type="text" id="full-name" name="full-name" placeholder="ФИО" required>
+                                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+
+                                    <div class="staff-select-group">
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">Должность</button>
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__list-item" data-value="tutor">Репетитор</li>
+                                                <li class="dropdown__list-item" data-value="governess">Гувернантка</li>
+                                                <li class="dropdown__list-item" data-value="nanny">Няня</li>
+                                                <li class="dropdown__list-item" data-value="driver">Водитель</li>
+                                                <li class="dropdown__list-item" data-value="gardener">Садовник</li>
+                                            </ul>
+                                            <input class="dropdown__input-hidden" type="text" name="select-category"
+                                                value="" required>
+                                            <img src="img/select-arrow.png" alt="стрелка выбора опций">
+                                        </div>
+                                    </div>
+
+                                    <input type="text" id="education" name="education" placeholder="Образование"
+                                        required>
+                                    <!-- <input type="file" id="attach-resume" name="attach-resume" placeholder="Прикрепить резюме" required> -->
+                                    <input type="file" id="fileInput" class="custom-file-input">
+                                    <label for="fileInput" class="custom-file-label">Выберите файл</label>
+
+                                    <button type="submit" class="header-feedback__submit-button">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">главная</a>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="#">главная</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="list-of-employees.html" class="menu__link">подобрать<br> персонал</a>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="#">подобрать<br>персонал</a>
                         <ul class="submenu__list">
-                            <li class="submenu__item">
+                            <li class="submenu__list-item">
                                 <a class="submenu__link" href="#">о нас</a>
                             </li>
-                            <li class="submenu__item">
+                            <li class="submenu__list-item">
                                 <a class="submenu__link" href="#">задать вопрос</a>
                             </li>
-                            <li class="submenu__item">
+                            <li class="submenu__list-item">
                                 <a class="submenu__link" href="#">это интересно</a>
                             </li>
-                            <li class="submenu__item">
+                            <li class="submenu__list-item">
                                 <a class="submenu__link" href="#">отзывы</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">цены</a>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="#">цены</a>
                     </li>
-                </ul>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">оставить<br> заявку</a>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="#">оставить<br>заявку</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">оставить<br> вакансию</a>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="#">оставить<br> вакансию</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">контакты</a>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="#">контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -91,16 +170,24 @@
             <div class="container">
                 <h2 class="title recruit-staff__title">Подобрать персонал</h2>
                 <div class="recruit-staff__inner">
+                    <img class="recruit-staff__img--right" src="img/orn-r.png" alt="">
+                    <img class="recruit-staff__img--left" src="img/orn-l.png" alt="">
                     <form action="#" method="post">
-                        <div class="selected-staff">
-                            <label for="selected-staff-category">Показать только</label>
-                            <select name="selected-staff-category" id="selected-staff-category">
-                                <option value="nanny">Няня</option>
-                                <option value="cook">Повар</option>
-                                <option value="governess">Гувернантка</option>
-                                <option value="groom">Конюх</option>
-                                <option value="gardener">Садовник</option>
-                            </select>
+                        <div class="staff-select-group">
+                            <label for="select-category">Показать только</label>
+                            <div class="dropdown">
+                                <button class="dropdown__button dropdown__button--show-only">Няня</button>
+                                <ul class="dropdown__list dropdown__list--show-only">
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="nanny">Няня</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="governess">Гувернантка</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="street-cleaner">Дворник</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="driver">Водитель</li>
+                                    <li class="dropdown__list-item dropdown__list-item--show-only" data-value="gardener">Садовник</li>
+                                </ul>
+                                <input class="dropdown__input-hidden" type="text" name="select-category"
+                                    value="" required>
+                                <img src="img/select-arrow.png" alt="стрелка выбора опций">
+                            </div>
                         </div>
                         <div class="selected-property__wrapper">
                             <div class="selected-property__row">
@@ -138,9 +225,9 @@
                             <td>15 лет</td>
                         </tr>
                         <tr class="table-row">
-                            <td>Ермакова Надежда Ивановна</td>
-                            <td>Няня</td>
-                            <td>30</td>
+                            <td class="table-data--active">Ермакова Надежда Ивановна</td>
+                            <td class="table-data--border">Няня</td>
+                            <td class="table-data--border">30</td>
                             <td>5лет</td>
                         </tr>
                         <tr class="table-row">
@@ -151,20 +238,20 @@
                         </tr>
                         <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
-                            <td>Уборщица</td>
-                            <td>35</td>
+                            <td class="table-data--border">Уборщица</td>
+                            <td class="table-data--border">35</td>
                             <td>7 лет</td>
                         </tr>
                         <tr class="table-row">
-                            <td>Миронов Юрий Герасимович</td>
+                            <td class="table-data--active">Миронов Юрий Герасимович</td>
                             <td>Конюх</td>
                             <td>60</td>
                             <td>15 лет</td>
                         </tr>
                         <tr class="table-row">
                             <td>Новикова Нина Алексеевна</td>
-                            <td>Повар</td>
-                            <td>55</td>
+                            <td class="table-data--border">Повар</td>
+                            <td class="table-data--border">55</td>
                             <td>30 лет</td>
                         </tr>
                         <tr class="table-row">
@@ -175,8 +262,8 @@
                         </tr>
                         <tr class="table-row">
                             <td>Лопухова Надежда Александровна</td>
-                            <td>Гувернантка</td>
-                            <td>45</td>
+                            <td class="table-data--border">Гувернантка</td>
+                            <td class="table-data--border">45</td>
                             <td>15 лет</td>
                         </tr>
                         <tr class="table-row">
@@ -268,6 +355,7 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="js/top-slider.js"></script>
+        <script src="js/modal-window.js"></script>
     </body>
 
 </html>

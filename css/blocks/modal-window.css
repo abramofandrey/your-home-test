@@ -98,6 +98,7 @@
     margin: 0;
     padding: 0;
     background: var(--background-modal);
+    border: 1px solid var(--border-color-modal);
     overflow: hidden;
     width: 100%;
     z-index: 1;

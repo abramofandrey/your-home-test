@@ -1,6 +1,6 @@
 .header {
     background-color: var(--color-main);
-    padding-top: 10px;
+    padding-top: 8px 23px;
     position: relative;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -25,6 +25,8 @@
     width: 175px;
     height: 25px;
     background: var(--gradient-accent);
+    border: 1px solid var(--border-btn);
+    text-shadow: var(--text-shadow);
     border-radius: 4px;
     font-family: "Book Antiqua";
     color: var(--color-main);
@@ -50,7 +52,7 @@
 }
 
 .header img {
-    z-index: 100px;
+    z-index: 10;
 }
 
 .header__logo {

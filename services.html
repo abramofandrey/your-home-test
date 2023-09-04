@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base/reset.css">
+        <link rel="stylesheet" href="css/base/fonts.css">
+        <link rel="stylesheet" href="css/base/vars.css">
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 30px;
+            }
+
+            .container {
+                max-width: 910px;
+                padding: 0 15px;
+                margin: 0 auto;
+            }
+
+            .services__inner {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                background-image: url('./img/ornament.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            .services-content {
+                display: grid;
+                grid-template-columns: minmax(3.75em, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                padding: 15px 35px;
+            }
+
+            .services-content__heading span {
+                font-family: "GaramondC", "Arial", sans-serif;
+                font-size: 23px;
+                font-weight: bold;
+                background-color: #2aa5a0;
+                background-image: var(--gradient-text);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .services-content__description,
+            .services-content__paragraph {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                text-align: justify;
+                text-align: left;
+                text-justify: inter-character;
+                color: var(--color-text);
+                text-shadow: var(--text-shadow);
+            }
+
+            .services-content__text {
+                margin-top: 10px;
+            }
+
+            .services-content__btn {
+                width: 130px;
+                height: 30px;
+                font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-shadow: var(--text-shadow);
+                color: var(--color-main);
+                text-align: center;
+                border-radius: 5px;
+                background: var(--gradient-accent);
+                transition: all 0.4s ease;
+                border: none;
+                border: 1px solid var(--border-color);
+            }
+
+            .services-content__btn:hover {
+                background: var(--gradient-main);
+                color: var(--color-accent);
+                cursor: pointer;
+            }
+
+            .title__wrapper {
+                grid-area: 1 / 1 / 3 / 4;
+                display: flex;
+            }
+
+            .services-content:nth-child(2) .title__wrapper {
+                grid-area: 1 / 4 / 3 / 7;
+                justify-content: flex-end;
+            }
+
+            .services-content__image {
+                grid-area: 1 / 4 / 5 / 7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .services-content:nth-child(2) .services-content__image {
+                grid-area: 1 / 1 / 5 / 4;
+            }
+
+            .services-content__text {
+                grid-area: 3 / 1 / 5 / 4;
+                display: flex;
+            }
+
+            .services-content:nth-child(2) .services-content__text {
+                grid-area: 3 / 4 / 5 / 7;
+                display: flex;
+            }
+
+            .services-content__bottom-text {
+                grid-area: 5 / 1 / 7 / 7;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+
+            .services-content__button {
+                grid-area: 7 / 1 / 8 / 7;
+                display: flex;
+                justify-content: flex-end;
+                align-items: end;
+            }
+
+            .services-content:nth-child(2) .services-content__button {
+                grid-area: 7 / 1 / 8 / 7;
+                display: flex;
+                justify-content: flex-start;
+                align-items: end;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="services">
+            <div class="container">
+                <div class="services__inner">
+                    <div class="services-content services-content--permanent">
+                        <div class="title__wrapper">
+                            <h2 class="services-content__heading"><span>Постоянный</span><br> <span>персонал</span></h2>
+                        </div>
+                        <div class="services-content__image">
+                            <img class="services-content__img" src="img/house-pic.png"
+                                alt="изображение дома с ключем в двери">
+                        </div>
+                        <div class="services-content__text">
+                            <p class="services-content__description">Наличие в доме обслуживающего<br> персонала -
+                                водителя,
+                                няни,<br> гувернантки, горничной<br> домработницы - это вовсе не<br>
+                            </p>
+                        </div>
+                        <div class="services-content__bottom-text">
+                            <p class="services-content__paragraph">
+                                дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей.
+                                Напротив, услугами<br> сиделки или няни
+                                пользуются сегодня те, кто отлично знает<br> цену деньгам и своему времени.
+                            </p>
+                        </div>
+                        <div class="services-content__button">
+                            <button class="services-content__btn">подробнее</button>
+                        </div>
+                    </div>
+                    <div class="services-content services-content--temporary">
+                        <div class="title__wrapper">
+                            <h2 class="services-content__heading"><span>Временный</span><br> <span>персонал</span></h2>
+                        </div>
+                        <div class="services-content__image">
+                            <img class="services-content__img" src="img/alarm-pic.png" alt="изображение будильника">
+                        </div>
+                        <div class="services-content__text">
+                            <p class="services-content__description">Наличие в доме обслуживающего<br> персонала -
+                                водителя,
+                                няни,<br> гувернантки, горничной<br> домработницы - это вовсе не<br>
+                            </p>
+                        </div>
+                        <div class="services-content__bottom-text">
+                            <p class="services-content__paragraph">
+                                дань моде и не причуды избалованных нежданно свалившимся богатством
+                                нуворишей.
+                                Напротив, услугами<br> сиделки или няни
+                                пользуются сегодня те, кто отлично знает<br> цену деньгам и своему времени.
+                            </p>
+                        </div>
+                        <div class="services-content__button">
+                            <button class="services-content__btn">подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>
