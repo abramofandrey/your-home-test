@@ -15,6 +15,7 @@
     background-color: var(--background-color-modal);
     border: 1px solid var(--border-color-modal);
     border-radius: 1px;
+    z-index: 10;
 }
 
 .header-feedback__modal--resume {
